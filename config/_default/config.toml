@@ -43,7 +43,7 @@ ignoreErrors = ["error-remote-getjson"]
   folderName = "personal_files"
   # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
   files = [ 
-    ["Personal Info", "/post/welcome.md"],
+    ["Coming Soon", ""],
   ]
 
 [module]

@@ -1,0 +1,52 @@
+baseURL = "/"
+title = "Hacker-Idiot"
+author = "Hacker-Idiot"
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+[Params]
+  [Params.Terminal]
+  # Note: color schema
+  # Note: You can choose between
+  # Note: ["monokai", "powershell", "gruvbox_light", "gruvbox_dark", "solarized_light", "solarized_dark", "ubuntu", "retro"]
+  schema = "monokai"
+
+  # Note: in terminal
+  # [userName]@[pcName]:~/$ cd [workDir]
+  # [userName]@[pcName]:~/[workDir]$ cat [profile]
+  #
+  # [description]
+  #
+  # Note: if you set Params.Tree > user = true
+  # [userName]@[pcName]:~/[workDir]$ tree ./[folderName]/
+  # ./[folderName]/
+  # ...
+  # Note: result of the tree command
+  userName = "HackerIdiot"
+  pcName = "internet"
+  workDir = "idiot"
+  profile = "db.txt"
+
+  # Note: speed at which text is displayed on the terminal
+  terminalDelay = 20
+
+  # Note: speed at which text is displayed on the activity pages
+  activityDelay = 5
+  
+  description = """
+  hey  hold on who told gave you access code to you your not allowed to visit this site its personal get out of here as sson as possible.
+
+  """
+  [Params.Tree]
+  use = true
+  folderName = "personal_files"
+  # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
+  files = [ 
+    ["Personal Info", "/post/welcome.md"],
+  ]
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.85.0"

@@ -1,0 +1,13 @@
+[build]
+  command = "hugo"
+  publish = "public"
+
+[context.production.environment]
+  HUGO_VERSION = "0.87.0"
+
+[[plugins]]
+package = "@algolia/netlify-plugin-crawler"
+  [plugins.inputs]
+  branches = ['main']
+  pathPrefix = "/"
+  customDomain = "hackeridiot.tk"
